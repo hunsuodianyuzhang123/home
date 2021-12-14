@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>主页</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdn.staticfile.org/dayjs/1.4.1/dayjs.min.js"></script>
+    <script src="https://cdn.staticfile.org/moment.js/1.0.0/moment.min.js"></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <!-- 头部 -->
+      <header id="header">
+        <h2>🐷 页</h2>
+      </header>
+      <!-- 时间 -->
+      <div id="time">
+        <p></p>
+      </div>
+      <!-- 搜索 -->
+      <div id="search">
+        <input type="text" name="" id="ipt" placeholder="搜狗搜索" />
+        <button id="btn">搜索</button>
+      </div>
+      <!-- 标签 -->
+      <ul id="tabs">
+        <li><a href="javascript:;" id="tab-changyong">常用</a></li>
+        <li><a href="javascript:;" id="tab-dianshi">电视</a></li>
+        <li><a href="javascript:;" id="tab-keji">科技</a></li>
+        <li><a href="javascript:;" id="tab-sheji">设计</a></li>
+        <li><a href="javascript:;" id="tab-daima">代码</a></li>
+      </ul>
+      <!-- 内容 -->
+      <div id="section">
+        <!-- 常用 -->
+        <section id="changyong">
+          <ul>
+            <li><a href="https://www.bilibili.com/">哔哩哔哩</a></li>
+            <li><a href="https://www.huya.com/21059589">武林外传直播</a></li>
+            <li><a href="./music.html">随机网易云音乐</a></li>
+            <li><a href="https://fanyi.sogou.com/text">搜狗翻译</a></li>
+            <li><a href="https://github.com/">github</a></li>
+          </ul>
+        </section>
+        <!-- 电视 -->
+        <section id="dianshi">
+          <ul>
+            <li><a href="https://www.555dy.com/">555电影网</a></li>
+            <li><a href="https://www.huya.com/">虎牙直播</a></li>
+            <li><a href="https://www.douyu.com/">斗鱼直播</a></li>
+            <li><a href="https://live.bilibili.com/">哔哩哔哩直播</a></li>
+          </ul>
+        </section>
+        <!-- 科技 -->
+        <section id="keji">
+          <ul>
+            <li><a href="https://www.zol.com.cn/">中关村在线</a></li>
+            <li><a href="https://wap.zol.com.cn/">中关村在线产品库</a></li>
+            <li><a href="https://www.autohome.com.cn/">汽车之家</a></li>
+          </ul>
+        </section>
+        <!-- 设计 -->
+        <section id="sheji">
+          <ul>
+            <li><a href="https://huaban.com/">花瓣网</a></li>
+            <li><a href="https://www.zcool.com.cn/">站酷</a></li>
+          </ul>
+        </section>
+        <!-- 代码 -->
+        <section id="daima">
+          <ul>
+            <li><a href="https://www.w3school.com.cn/">w3school</a></li>
+            <li><a href="https://developer.mozilla.org/zh-CN/">MDN</a></li>
+            <li>
+              <a href="./note/1.HTML5+CSS3+电商网页制作.html">笔记-H5C3</a>
+            </li>
+            <li><a href="./note/2.移动端Web开发.html">笔记-移动端</a></li>
+            <li>
+              <a href="./note/3.JavaScript基础语法.html">笔记-js基础语法</a>
+            </li>
+            <li>
+              <a href="./note/4.WebAPIs Dom Bom操作方法.html">笔记-Web APIs</a>
+            </li>
+            <li><a href="./note/5.jQuery.html">笔记-jQuery</a></li>
+            <li>
+              <a href="./note/6.数据可视化 ECharts 实战.html">笔记-Echarts</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <!-- 注 -->
+      <div id="zhu">
+        <p>*仅供个人测试使用</p>
+      </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
