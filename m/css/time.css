@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#app {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 150px 0;
+}
+#app #return {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  text-decoration: none;
+}
+#app #return span {
+  font-size: 20px;
+  color: #222;
+}
+#app h2,
+#app p {
+  line-height: 60px;
+  font-weight: 700;
+  color: #222;
+}
+#app h2 {
+  font-size: 30px;
+}
+#app p {
+  font-size: 20px;
+}

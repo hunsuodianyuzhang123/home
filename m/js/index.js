@@ -12,21 +12,19 @@ if (
 $('#tabs').on('click', 'li', function () {
   $('#section section').eq($(this).index()).show().siblings().hide()
 })
-// 时间
-$('#time p').html(dayjs().format('YYYY-MM-DD HH:mm:ss dddd'))
-setInterval(function(){
-  $('#time p').html(dayjs().format('YYYY-MM-DD HH:mm:ss dddd'))
-}, 1000);
-// 搜索
-$('#btn').on('click', function () {
-  window.location.href = 'https://www.sogou.com/web?ie=UTF-8&query=' + $('#ipt').val()
-  $('#ipt').val() = ''
-})
 // 点击
-// 可以再想想
-$('#tabs li:first-child').css('fontWeight','700')
-$('#tabs').on('click','li', function () {
-  $('#tabs li').eq($(this).index()).css('fontWeight','700').siblings().css('fontWeight','400')
+$('#tabs li:first-child').css({ fontWeight: '700', backgroundColor: '#e0e0e0' })
+$('#tabs li').on('click', function () {
+  $(this)
+    .css({
+      fontWeight: '700',
+      backgroundColor: '#e0e0e0',
+    })
+    .siblings()
+    .css({
+      fontWeight: '400',
+      backgroundColor: '#eee',
+    })
 })
 // 其他
 console.log('以后有可能会完善')

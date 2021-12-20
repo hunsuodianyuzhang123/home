@@ -13,91 +13,63 @@
   // font-family: 'Microsoft Yahei';
 }
 #app {
+  position: relative;
   text-align: center;
   background-color: #fff;
   // 头部
   #header {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 50px;
+    height: 60px;
     background-color: @color-blue;
     h2 {
       font-size: 24px;
       font-weight: 700;
       color: #fff;
     }
-  }
-  // 时间
-  #time {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 30px;
-    background-color: @color-blue;
-    p {
-      font-size: 16px;
-      color: rgba(255, 255, 255, 0.7);
-    }
-  }
-  // 搜索
-  #search {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 40px;
-    background-color: @color-e;
-    padding: 0 15px;
-    #ipt {
-      flex: 1;
-      height: 30px;
-      background-color: #fff;
-      border: 1px solid @color-e0;
-      border-radius: 15px;
-      color: #222;
-      text-align: center;
-      margin-top: 8px;
-      padding: 0 15px;
-      outline: 0;
-    }
-    #btn {
-      width: 60px;
-      height: 30px;
-      background-color: @color-blue;
-      border: 0;
-      border-radius: 15px;
+    .icon-clock,
+    .icon-search {
+      position: absolute;
+      top: 0;
+      font-size: 20px;
+      line-height: 60px;
       color: #fff;
-      margin-left: 8px;
-      margin-top: 8px;
+    }
+    .icon-clock {
+      left: 15px;
+    }
+    .icon-search {
+      right: 15px;
     }
   }
   // 标签
   #tabs {
+    position: fixed;
+    bottom: 0;
+    left: 0;
     display: flex;
     justify-content: space-around;
     width: 100%;
-    height: 40px;
+    height: 80px;
     li {
       display: flex;
       justify-content: center;
       align-items: center;
       flex: 1;
       height: 100%;
+      background-color: @color-e;
       list-style: none;
       a {
         display: block;
         width: 100%;
         height: 100%;
-        background-color: @color-e;
         font-size: 16px;
-        line-height: 40px;
+        line-height: 80px;
         color: #222;
         text-decoration: none;
-        &:hover {
-          background-color: @color-e0;
-        }
       }
     }
   }
@@ -144,6 +116,7 @@
       }
     }
   }
+  // 注
   #zhu {
     width: 100%;
     height: 20px;
