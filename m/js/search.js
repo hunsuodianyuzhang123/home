@@ -1,5 +1,7 @@
-// 进入式按钮自动聚焦
+// 进入式按钮自动聚焦，聚焦样式自动变化
 document.getElementById('ipt').focus()
+document.getElementById('ipt').style.borderWidth = '2px'
+document.getElementById('ipt').style.borderColor = '#1a73e8'
 // 聚焦的样式
 document.getElementById('ipt').onfocus = function () {
   document.getElementById('ipt').style.borderWidth = '2px'

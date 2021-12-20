@@ -36,3 +36,8 @@ console.log('随便写的，有什么问题的话可别找我哦~~')
 // } else {
 //   window.location.href = "./index.html"; // 电脑
 // }
+new ClipboardJS('.btn')
+document.querySelector('.btn').onclick = function () {
+  alert('已复制微信号：w13256061539')
+  window.location.href = 'weixin://'
+}
