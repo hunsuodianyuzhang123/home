@@ -2,6 +2,16 @@
   padding: 50px 30px;
   text-align: center;
 }
+#app #return {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  text-decoration: none;
+}
+#app #return span {
+  font-size: 20px;
+  color: #222;
+}
 .title,
 .author,
 .iptTitle,
