@@ -10,9 +10,9 @@ if (
 }
 
 // 时间
-var times = function () {
-  $('#time .time p').html(dayjs().format('YYYY-MM-DD HH:mm:ss dddd'))
-}
+// var times = function () {
+//   $('#time .time p').html(dayjs().format('YYYY-MM-DD HH:mm:ss dddd'))
+// }
 times()
 setInterval(function () {
   times()
